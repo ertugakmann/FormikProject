@@ -3,9 +3,6 @@ import { useFormik } from "formik";
 import { basicSchema } from "./schemas/index.jsx";
 
 const onSubmit = async (values, actions) => {
-  console.log(values);
-  console.log(actions);
-
   await new Promise((resolve) => {
     setTimeout(resolve, 1000);
   });
@@ -25,7 +22,6 @@ function GeneralForm() {
       onSubmit,
     });
 
-  //   console.log(formik);
   return (
     <form onSubmit={handleSubmit}>
       <div className="inputDiv">
